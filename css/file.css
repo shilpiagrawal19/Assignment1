@@ -1,0 +1,109 @@
+body{
+
+}
+
+.loginbox{
+    width: 1200px;
+    height: 700px;
+    margin-right: 75px;
+    margin-left: 65px;
+    background-image: url(file:///E:/sysmetic/Assignment1/images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box{
+    float: right;
+    border: 1px solid grey;
+    align-items: center;
+    width: 200px;
+    height: 350px;
+    margin-top: 200px;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 25px;
+    
+}
+
+.logosam{
+    padding-bottom: 30px;
+    width: 120px;
+    padding-left: 40px;
+}
+
+input[type="text"] ,input[type="password"]
+{
+    border: none;
+	border-bottom: 1px solid grey;
+	background: transparent;
+    height: 15px;
+    font-size: 12px;
+    color: white;
+    width: 200px;
+
+}
+
+.label{
+    font-size: 12px;
+    color: white;
+}
+
+.forgotpassword{
+    float: right;
+    font-size: 10px;
+    color: white;
+    text-decoration: underline;
+}
+
+.btnlogin{
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #0a2cfb;
+    opacity: 0.8;
+    color:white;
+    background: linear-gradient(to right ,darkblue, blue ,lightblue);
+
+}
+
+.pera{
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+.pera a{
+    text-decoration: underline;
+}
+
+/* signup */
+.boxsign{
+    float: right;
+    border: 1px solid grey;
+    align-items: center;
+    width: 200px;
+    height: 450px;
+    margin-top: 120px;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 25px;
+    
+}
+
+/* Reset password */
+
+.Resethead{
+    font-size: 14px;
+    text-align: center;
+    color:#589de4;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
