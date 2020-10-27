@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="file:///E:/sysmetic/Assignment1/css/file.css">
+        <link rel="stylesheet" type="text/css" href="file:///E:/sysmetic/Assignment1/css/file1.css">
+
+    </head>
+    <body>
+        <section class="navheader" >
+            <div><img src="E:\sysmetic\Assignment1\images\logo-White-Text.png" class="logosamnav"></div>
+
+            <nav>
+                <div class="dropdown">
+                    <a class="dropbtn">John Smith &nbsp;&nbsp;<img src="E:\sysmetic\Assignment1\images\dropdownicon.png"></a>
+                    <div class="dropcontent">
+                        <a class="popup"  onclick="document.getElementById('log').style.display='block';">Change Password</a>
+                        <div id="log" class="first">
+      
+                            <form class="firstcontent" action="login.html" method="post">
+                              <div class="imgcontainer">
+                                <span onclick="document.getElementById('log').style.display='none'" class="close" > &times;</span>
+                                <h4 class="pophead">Change password</h4>
+                              </div>
+                          
+                              <div class="container">
+                                <label ><b>Old Password</b></label>
+                                <input type="password" name="pswold" required>
+               
+                                <label ><b>New Password</b></label>
+                                <input type="password"  name="pswnew" required>
+
+                                <label ><b>Retype Password</b></label>
+                                <input type="password" name="pswre" required>
+
+                                <button type="submit" class="btnchange">Change</button>
+                              </div>
+                            </form>
+                          </div>
+                        <a href="">Logout</a>
+
+
+                    </div>
+                </div>
+            
+
+            </nav>
+        </section>
+
+        <section class="firsttime">
+            <img src="E:\sysmetic\Assignment1\images\image(1).png" class="imgfirsttime">
+            <div class="firstcontentapp">
+            <h3 class="headfirst">No App Registered</h3>
+            <p style="color: #4d4d4d;">once you add Apps, they will appear here! </p>
+            <form action="Newappregistration.html">
+            <button type="submit" class="btnnewapp" >New App Register</button>
+            </form>
+            </div>
+
+
+        </section>
+        <script>
+            var change = document.getElementById('log');
+               onclick = function(event) {
+                if (event.target == change) {
+                    change.style.display = "none";
+            }
+               }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assets New asset</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="file:///E:/sysmetic/Assignment1/css/file.css">
+        <link rel="stylesheet" type="text/css" href="file:///E:/sysmetic/Assignment1/css/file1.css">
+
+    </head>
+    <body style="margin-top: 0px;">
+
+        <section class="appinfo" >
+            <div class="sidenav">
+            <img src="E:\sysmetic\Assignment1\images\logo-White-Text.png" class="logosamapp"> 
+            <div class="sidecontent">
+                <a class="sidenavcontent" href="Appinformation.html" >App Information </a><br>
+                <a href="Assets.html" class="sidenavcontent" > Assets Management <img src="E:\sysmetic\Assignment1\images\Arrow.png" style="padding-left: 140px;"></a>
+            </div> 
+            </div>
+
+            <div class="upnavinfo">
+                
+                <div class="appsnav">
+                    <div class="dropdown1">
+                        <button class="dropbtn1"><img class="imgapplogodrop" src="E:\sysmetic\Assignment1\images\Icons\unnamed (1).png">New Message app&nbsp;&nbsp;
+                            <img src="E:\sysmetic\Assignment1\images\Drop down arrow.png"></button>
+                              
+                        <div class="dropcontent1">
+                            <a><img class="imgapplogodrop" src="E:\sysmetic\Assignment1\images\Icons\Group 51.png">My apps</a>
+                            <a><img class="imgapplogodrop" src="E:\sysmetic\Assignment1\images\Icons\logo.png">ITPC app</a>
+                            <a><img class="imgapplogodrop" src="E:\sysmetic\Assignment1\images\Icons\unnamed (1).png">New message app</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=nav2>
+                <div class="dropdown2">
+                    <a class="dropbtn2">John Smith &nbsp;&nbsp;<img src="E:\sysmetic\Assignment1\images\Drop down arrow.png" width="12px;"></a>
+                    <div class="dropcontent2">
+                        <a onclick="document.getElementById('log').style.display='block';">Change Password</a>
+                        <div id="log" class="first">
+      
+                            <form class="firstcontent" action="login.html" method="post">
+                              <div class="imgcontainer">
+                                <span onclick="document.getElementById('log').style.display='none'" class="close" > &times;</span>
+                                <h4 class="pophead">Change password</h4>
+                              </div>
+                          
+                              <div class="container">
+                                <label ><b>Old Password</b></label>
+                                <input type="password" name="pswold" required>
+               
+                                <label ><b>New Password</b></label>
+                                <input type="password"  name="pswnew" required>
+
+                                <label ><b>Retype Password</b></label>
+                                <input type="password" name="pswre" required>
+
+                                <button type="submit" class="btnchange">Change</button>
+                              </div>
+                            </form>
+                          </div>
+                        <a href="">Logout</a>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+         
+            <div class="appinformation">
+                <a class="backlink" href="Appinformation.html"><img src="E:\sysmetic\Assignment1\images\Back.png" class="backarrowsize">&nbsp; Back</a>       
+            </div>
+
+            <div class="assetmanage">
+                <br><a>Add New Asset</a>   
+
+                
+
+                <div class="assetnameandall">
+                <label style="padding-right: 285px ;">Asset Name</label>
+                <label>AR Tracking</label><br>
+                <input type="text">
+
+                <select>
+                    <option >Select </option>
+                    <option name="Vertical"><a href="Assetdetail.html"> Vertical plane Tracking</a></option>
+                    <option name="">option1</option>
+                    <option name="">option2</option>
+                    <option name="">option3</option>
+                </select>
+               
+    
+                </div>
+
+                <div class="assetuploadimg">
+                    <img src="E:\sysmetic\Assignment1\images\3dicon.png">
+                    <a>Assetimageupload</a>
+
+                </div>
+                <div class="bottons"> 
+                    <a href="Addnewassets.html" ><img src="E:\sysmetic\Assignment1\images\Apple.png">iOS</a>
+                    <a><img src="E:\sysmetic\Assignment1\images\Android.png">Android</a>
+                    <a><img src="E:\sysmetic\Assignment1\images\unity.png">Unity</a>
+                </div>
+
+                <div class="drag">
+                   <p>Drag Assets here</p>
+                    <p>Or</p>
+                    <a>upload</a> 
+
+                </div>
+            </div>
+   
+        </section>
+       
+
+        <script>
+            var change = document.getElementById('log');
+               onclick = function(event) {
+                if (event.target == change) {
+                    change.style.display = "none";
+            }
+               }
+            </script>
+          
+    </body>
+</html>

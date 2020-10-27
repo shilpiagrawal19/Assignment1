@@ -1,30 +1,56 @@
 body{
+    margin: 0px;
 
 }
 
 .loginbox{
-    width: 1200px;
+    width: 100%;
     height: 700px;
-    margin-right: 75px;
-    margin-left: 65px;
+    /* margin-right: 75px;
+    margin-left: 65px; */
     background-image: url(file:///E:/sysmetic/Assignment1/images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .box{
+    background-color: #080838;
     float: right;
-    border: 1px solid grey;
+    border: 1px solid;
+    border-color: #3939ca #345fbf #80077f #7a417d;
     align-items: center;
     width: 200px;
-    height: 350px;
+    height: 330px;
     margin-top: 200px;
-    margin-right: 100px;
+    margin-right: 150px;
     padding-top: 50px;
     padding-right: 50px;
     padding-left: 50px;
     border-radius: 25px;
     
+}
+::placeholder{
+    color: white;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    font-size: 11px;
+}
+#email::placeholder{
+    background: url(file:///E:/sysmetic/Assignment1/images/emailicon.png);
+    background-repeat: no-repeat;
+    padding-bottom: 5px;
+    background-size: 8%;
+
+
+}
+
+#password::placeholder{
+    background: url(file:///E:/sysmetic/Assignment1/images/passwordicon.png);
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+    background-size: 6%;
+
+
 }
 
 .logosam{
@@ -42,12 +68,8 @@ input[type="text"] ,input[type="password"]
     font-size: 12px;
     color: white;
     width: 200px;
+    padding-bottom: 8px;
 
-}
-
-.label{
-    font-size: 12px;
-    color: white;
 }
 
 .forgotpassword{
@@ -65,10 +87,12 @@ input[type="text"] ,input[type="password"]
     margin-left: 50px;
     margin-bottom: 20px;
     border-radius: 20px;
-    box-shadow: 3px 3px 3px #0a2cfb;
+    font-size: 10px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    box-shadow: 0px 0px 25px 0px #0a2cfb;
     opacity: 0.8;
     color:white;
-    background: linear-gradient(to right ,darkblue, blue ,lightblue);
+    background: linear-gradient(to right ,#0c04AE ,#2564DE);
 
 }
 
@@ -82,15 +106,26 @@ input[type="text"] ,input[type="password"]
     text-decoration: underline;
 }
 
-/* signup */
+/* /////////////////////////////////////////////////////signup////////////////////////////////////////////////////////////////////// */
+#name::placeholder{
+    background: url(file:///E:/sysmetic/Assignment1/images/nameicon.png);
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+    background-size: 6%;
+
+
+}
+
 .boxsign{
+    background-color: #080838;
     float: right;
-    border: 1px solid grey;
+    border: 1px solid;
+    border-color: #3939ca #345fbf #80077f #7a417d;
     align-items: center;
     width: 200px;
     height: 450px;
     margin-top: 120px;
-    margin-right: 100px;
+    margin-right: 150px;
     padding-top: 50px;
     padding-right: 50px;
     padding-left: 50px;
@@ -98,7 +133,7 @@ input[type="text"] ,input[type="password"]
     
 }
 
-/* Reset password */
+/*//////////////////////////////////////////////////////////////////////// Reset password ///////////////////////////////////////*/
 
 .Resethead{
     font-size: 14px;
@@ -106,4 +141,542 @@ input[type="text"] ,input[type="password"]
     color:#589de4;
     margin-top: 0px;
     margin-bottom: 30px;
+}
+
+/* ////////////////////////////////////////////////varification form/////////////////////////////////////////////////////////////////// */
+
+.boxvari{
+    background-color: #080838;
+    float: right;
+    border: 1px solid ;
+    border-color: #3939ca #345fbf #80077f #7a417d;
+
+    align-items: center;
+    width: 200px;
+    height: 450px;
+    margin-top: 120px;
+    margin-right: 150px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 25px;
+
+}
+#code::placeholder{
+    background: url(file:///E:/sysmetic/Assignment1/images/varificationicon.png);
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+    background-size: 8%;
+
+
+}
+
+.vari{
+    font-size: 9px;
+    color: white;
+    line-height: 1px;
+    text-align: center;
+}
+
+.para2{
+    margin-bottom: 25px;
+}
+
+/*/////////////////////////////////////////////////////////////// Registerdappfirsttime///////////////////////////////////////////////////// */
+.navheader{
+    width: 100%;
+    height: 70px;
+    /* margin-right: 75px;
+    margin-left: 65px; */
+    background: linear-gradient(to right,#5C174E,#040073)
+}
+
+.logosamnav{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width: 100px;
+    padding-left: 80px;
+    float: left;
+}
+nav{
+    float: right;
+    font-size: 12px;
+    color: white;
+}
+
+.dropdown{
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    width: 90px;
+    margin-left: 40px;
+} 
+  .dropcontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    font-size: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 5px;
+    left: 1200px;
+    border-radius: 6px;
+  }
+  
+  
+  .dropcontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropcontent a:hover {
+    background-color:white ;
+  }
+  .dropdown:hover .dropcontent {
+    display: block;
+  }
+
+  .firsttime{
+    width: 100%;
+    height: 600px;
+    background-color: #f2f6fc;
+    /* margin-right: 75px;
+    margin-left: 65px; */
+    padding-top: 20px;
+  }
+
+  .imgfirsttime{
+    width: 240px;
+    margin-top: 115px;
+    margin-left: 540px;
+  }
+  .firstcontentapp{
+      text-align: center;
+  }
+  .btnnewapp{
+    border: none;
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px 0px #0a2cfb;
+    opacity: 0.8;
+    color:white;
+    background: linear-gradient(to right ,#0c04AE ,#2564DE);
+
+}
+
+.headfirst{
+    color: #2462D7;
+}
+
+/* ////////////////////////////////////////////////////////Registered app //////////////////////////////////////////////////*/
+.afterfirsttime{
+    /* width: 1200px; */
+    width: 100%;
+    height: 600px;
+    background-color: #f2f6fc;
+    /* margin-right: 75px;
+    margin-left: 65px; */
+    padding-top: 20px;
+  }
+
+
+.boxicon{
+    margin-left: 30px;
+    background-color: white;
+    width: 162px;
+    height: 162px;
+    border: 1px solid #efdede;
+        box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+
+    border-radius: 12px;
+    /* box-shadow: #4d4d4d; */
+}
+
+.imgicon{
+    
+        width: 70px;
+        height: 70px;
+        padding-top: 20px;
+        padding-left: 44px;
+}
+
+.iconboxhead{
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.iconboxpera{
+    font-size: 8px;
+    color: #4d4d4d;
+    text-align: center;
+}
+
+.row1{
+
+    padding-left: 75PX;
+    display: flex;
+}
+
+.row2{
+    padding-left: 75PX;
+    margin-top: 20px;
+    display: flex;
+}
+
+.addnew{
+    
+    margin-left: 1250px;
+    margin-top: 150px;
+
+
+}
+
+.addnew img{
+    width: 60px;
+    height: 60px;
+}
+
+/* ///////////////////////////////////////////////////////////Newappregistration /////////////////////////////////////////////////////*/
+.boxnewapp
+{    
+    height: 320px;
+    width: 450px;
+    margin-left: 450px;
+    margin-top: 80px;
+  background-color: white;
+  border: 1px solid #e4d9d9;
+  box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.1);
+
+  border-radius: 10px;
+}
+
+.headnewapp{
+ width: 450px;
+ background:linear-gradient(to right ,#0c04AE ,#2564DE);
+ font-size: 12px;
+ color: white;
+ margin-top: 0px;
+ height: 30px;
+ padding-top: 15px;
+ border-top-right-radius: 10px;
+ border-top-left-radius: 10px;
+ text-align: center;
+}
+.boxnewapp label{
+    font-size: 11px;
+}
+.boxnewapp input[type="text"]{
+    border: 1px solid #e4d9d9;
+    background-color:#f2f6fc ;
+    border-radius:5px;
+    height: 25px;
+    width: 280px;
+    padding-top: 0px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+.newappleft{
+    float: left;
+    width: 320px;
+    padding-top: 10px;
+    padding-left: 25px;
+    
+}
+
+.registerappbtn{
+    border: none;
+    width: 100px;
+    height: 25px;
+    /* margin-left: 20px; */
+    margin-bottom: 20px;
+    margin-right: 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #0a2cfb;
+    opacity: 0.8;
+    font-size: 11px;
+    color:white;
+    background: linear-gradient(to right ,#0c04AE ,#2564DE);
+
+}
+.newappleft a{
+    font-size: 11px;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+
+    .boxappimg{
+        
+        background-color: #f2f6fc;
+        margin-left: 330px;
+        width: 100px;
+        height: 100px;
+        margin-top: 45px;
+        border-radius: 10px;
+
+    }
+
+     #imagee{
+        /* padding-top: 10px; */
+        background-image: url("file:///E:/sysmetic/Assignment1/images/uploadiconplaceholder.png");
+        height: 30px;
+        width: 25px;
+        background-position:15px 15px;
+        background-repeat: no-repeat;
+        border: none;
+        padding-bottom: 60px;
+        padding-top: 20px;
+        padding-left: 30px;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+       
+/* ::placeholder{
+
+    position: relative;
+    bottom: 2px; */
+
+    /* .appimgg{
+        margin-top: 30px;
+        width: 95px;
+        height: 95px;
+    } */
+ .uploadappbtn{
+    text-decoration: underline;
+    border: none;
+    margin-top: 0px;
+    margin-left: 10px;
+    background-color: white;
+    position: relative;
+
+}
+    
+/*//////////////////////////////////////////////////////////// App information ////////////////////////////////////////////*/
+.appinfo{
+    width: 100%;
+    height: 700px;
+    /* margin-right: 75px;
+    margin-left: 65px; */
+}
+.upnavinfo{
+    top: 0%;
+    width: 1045px;
+    height: 80px;
+    margin-left: 302px;
+    background-color:#f2f6fc ;
+}
+ .sidenav
+{   float: left;
+    width: 300px;
+    height: 700px;
+    background:linear-gradient(to right,#5C174E,#040073);
+}
+
+.logosamapp{
+    width: 140px;
+    padding-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.dropdown1{
+    float: left;
+    width: 700px;
+}
+.nav2{
+    margin-top: 30px;
+        float: right;
+}
+
+.dropdown2{
+    /* padding-top: 25px; */
+    padding-right: 25px;
+    padding-bottom: 25px;
+    
+}
+
+.dropcontent2{
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    font-size: 10px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    left: 1200px;
+    margin-top: 5px;
+}
+
+.dropcontent2:hover{
+    display: block;
+    text-decoration: none;
+}
+
+.dropcontent2 a {
+    
+    color: black;
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.dropcontent2 a:hover{
+    background-color:white ;
+}
+.dropdown2:hover .dropcontent2 {
+    display: block;
+  }
+  .dropcontent1{
+    display:none;
+    position: absolute;
+    background-color: white;
+    font-size: 10px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    left: 702px;
+    /* margin-top: 5px; */
+}
+
+.dropcontent1:hover{
+    display: block;
+    text-decoration: none;
+}
+
+.dropcontent1 a {
+    
+    color: black;
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    height: 25px;
+    width: 135px;
+}
+
+.dropcontent1 a:hover{
+    background-color:#f9f9f9 ;
+}
+.dropdown1:hover .dropcontent1 {
+    display: block;
+  }
+  .imgapplogodrop{
+      height: 25px;
+      width: 25px;
+      padding-right: 5px;
+  }
+
+  .dropbtn1{
+   background-color: white;
+   border: none;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   font-size: 12px;
+   padding-bottom: 10px;
+   padding-top: 5px;
+   margin-left: 400px;
+   margin-top: 10px;
+}
+.sidecontent{
+    display: grid;
+    /* padding-left: 20px; */
+}
+.sidenavcontent {
+    background: linear-gradient(to right ,#77466d,#100c80);
+    font-size: 14px;
+    color: white;
+    width: 280px;
+    height: 35px;
+}
+
+.sidecontent a{
+    padding-top: 5px;
+    padding-left: 20px;
+    text-decoration: none;
+
+}
+
+/* lowerpartinfo */
+
+.appinformation{
+    margin-top: 20px;
+}
+.appinformation a{
+    text-decoration: none;
+    
+}
+.backlink{
+    padding-left: 20px;
+top: 20px;    font-size: 12px;
+    color: black;
+}
+
+.btnedit{
+    float: right;
+    border: none;
+    width: 60px;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #0a2cfb;
+    opacity: 0.8;
+    color:white;
+    background: linear-gradient(to right ,#0c04AE ,#2564DE);
+
+}
+.backarrowsize{
+    height: 10px;
+    margin-right: 2px;
+    margin-left: 12px;
+}
+
+.Descriptionapp{
+    width: 180px;
+    margin-top: 20px;
+    float: left;
+    margin-right: 30px;
+
+
+}
+
+.descripedlogosize{
+    padding-left: 25px;
+
+
+}
+
+.descripthead{
+padding-left: 48px;
+    margin-top: 10px;
+    color: #2564DE;
+    width: 120px;
+}
+.descriptcontent{
+    
+    margin-top: 30px;
+    /* color: #4d4d4d; */
+    font-size: 13px;
+}
+.revealbtn{
+    margin-left: 5px;
+    background-color: #f2f6fc;
+    border: 0.5px solid lightgrey;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+
+
+}
+
+.aboutapp{
+    padding-left: 510px;
+    padding-right: 100px;
+    font-size: 10px;
+    color: #4d4d4d;
+    line-height: 2;
+    text-align: justify;
 }

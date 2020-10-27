@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add New App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="file:///E:/sysmetic/Assignment1/css/file.css">
+        <link rel="stylesheet" type="text/css" href="file:///E:/sysmetic/Assignment1/css/file1.css">
+
+    </head>
+    <body>
+        <section class="navheader" >
+            <div><img src="E:\sysmetic\Assignment1\images\logo-White-Text.png" class="logosamnav"></div>
+
+            <nav>
+                <div class="dropdown">
+                    <a class="dropbtn">John Smith &nbsp;&nbsp;<img src="E:\sysmetic\Assignment1\images\dropdownicon.png"></a>
+                    <div class="dropcontent">
+                        <a class="popup"  onclick="document.getElementById('log').style.display='block';">Change Password</a>
+                        <div id="log" class="first">
+      
+                            <form class="firstcontent" action="login.html" method="post">
+                              <div class="imgcontainer">
+                                <span onclick="document.getElementById('log').style.display='none'" class="close" > &times;</span>
+                                <h4 class="pophead">Change password</h4>
+                              </div>
+                          
+                              <div class="container">
+                                <label ><b>Old Password</b></label>
+                                <input type="password" name="pswold" required>
+               
+                                <label ><b>New Password</b></label>
+                                <input type="password"  name="pswnew" required>
+
+                                <label ><b>Retype Password</b></label>
+                                <input type="password" name="pswre" required>
+
+                                <button type="submit" class="btnchange">Change</button>
+                              </div>
+                            </form>
+                          </div>
+                        <a href="">Logout</a>
+
+                    </div>
+                </div>
+            
+
+            </nav>
+        </section>
+
+        <section class="firsttime">
+            
+            <div class="boxnewapp">
+                <h3 class="headnewapp">New App Registration</h3>
+
+
+                <div class="newappleft">
+
+                <label>App name</label><br>
+                <input type="text" name="appname"><br>
+
+                <label>Description</label><br>
+                <input type="text" name="Description" style="height: 90px;"><br>
+                <form method="POST" action="Registeredapp.html">
+                <button class="registerappbtn">Register</button>
+                <a href="Registeredapp.html"> Cancel</a>
+            </form>
+
+                </div>
+
+                <!-- <div class="newappright"> -->
+                <div class="boxappimg">
+                    <!-- <div class="appimage"> -->
+                <input type="text" id="imagee" placeholder="Appicon">
+                <!-- </div> -->
+                <!-- <img src=""> -->
+                <button type="submit" class="uploadappbtn">Upload</button>
+                </div>
+                <!-- </div> -->
+
+                
+
+               
+           </div>
+
+       
+
+
+        </section>
+        <script>
+            var change = document.getElementById('log');
+               onclick = function(event) {
+                if (event.target == change) {
+                    change.style.display = "none";
+            }
+               }
+            </script>
+    </body>
+</html>

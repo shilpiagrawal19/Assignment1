@@ -1,0 +1,585 @@
+/* ////////////////////////////////////////////////////Changepassword ///////////////////////////////*/
+input[type=password] {
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: #f2f6fc;
+    /* display: inline-block; */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+.imgcontainer {
+    text-align: center;
+    margin: 5px 0 12px 0px;
+  }
+  
+.container {
+    padding: 16px;
+    background-color:#f1f1f1;
+  }
+
+  .first {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+    border-radius: 10px;
+  }  
+  
+.firstcontent {
+    background:linear-gradient(to right ,#0c04AE ,#2564DE);
+    margin: 7% 500px 15% auto; 
+    border: 1px solid #888;
+    width: 22%; 
+    height: 280px;
+    border-radius: 10px;
+  }
+
+  .container label{
+      float: left;
+      color: #000;
+  }
+  .close {  
+    margin-left: 270px;
+    color:white;
+    font-size: 17px;
+
+  }
+  
+  .pophead{
+      text-align: center;
+      margin-top: 0px;
+      font-size: 14px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    cursor: pointer;
+  }
+    
+  .btnchange{
+    
+        border: none;
+        width: 100px;
+        height: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px #0a2cfb;
+        opacity: 0.8;
+        color:white;
+        background: linear-gradient(to right ,#0c04AE ,#2564DE);
+    
+  }
+
+  .editapp{
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.4); 
+      /* padding-top: 60px; */
+      border-radius: 10px;
+      
+
+  }
+
+  .editt{
+      width: 500px;
+      height: 300px;
+      border: 1px solid lightslategrey;
+      border-radius: 10px;
+      margin: 180px 350px 100px 500px;
+
+  }
+
+  .edithead
+  {
+      width: 100%;
+      height: 40px;
+      margin-top: 0px;
+      padding-top: 0px;
+      background: linear-gradient(to right ,#0c04AE ,#2564DE);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+  }
+
+  .edithead h4{
+      padding-top: 11px;
+      margin-top: 0px;
+      text-align: center;
+      color: white;
+  }
+
+  .editmain{
+      width: 460px;
+      height: 260px;
+      background-color: white;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+
+  }
+
+  
+
+  .editmain label{
+        float: left;
+        color: #000;
+        font-size: 12px;
+    
+  }
+input[type=text]
+  {
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: #f2f6fc;
+  /* display: inline-block; */
+  border: 1px solid #ccc;
+
+  /* border: none; */
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.btnsave{
+    border: none;
+    width: 70px;
+    height: 20px;
+    margin-top: 10px;
+    /* margin-bottom: 20px; */
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #0a2cfb;
+    opacity: 0.8;
+    color:white;
+    background: linear-gradient(to right ,#0c04AE ,#2564DE);
+}
+
+.leftedit{
+    width:300px;
+    float: left;
+}
+
+.editmain span{
+    display: inline-block;
+}
+.uploadediticon{
+    width: 160px;
+    float: right;
+}
+
+.uploadediticon img{
+    margin-left: 27px;
+    height: 100px;
+    width: 100px;
+}
+
+.uploadediticon a{
+    margin-left: 55px;
+}
+
+/*///////////////////////////////////////////////////// REVEALPOPUP ///////////////////////////////////////////////*/
+
+.revealpopup{
+  width: 300px;
+  height: 160px;
+  border: 1px solid lightslategrey;
+  border-radius: 10px;
+  margin: 270px 350px 100px 550px;
+
+}
+
+
+.revealmain{
+  width: 260px;
+  height: 120px;
+  background-color: white;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+}
+
+.btnreveal{
+  border: none;
+  width: 70px;
+  height: 20px;
+  margin-top: 10px;
+  /* margin-bottom: 20px; */
+
+  margin-right: 10px;
+  margin-left: 85px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #0a2cfb;
+  opacity: 0.8;
+  color:white;
+  background: linear-gradient(to right ,#0c04AE ,#2564DE);
+}
+
+/*///////////////////////////////////////////////////////// ASSETS///////////////////////////////////////////// */
+
+.imgnoassets
+{
+  width: 190px;
+  height: 180px;
+  padding-top: 85px;
+  padding-left: 420px;
+}
+
+.Assetscontent{
+  text-align: center;
+}
+
+/* /////////////////////////////////ASSETSLISTING//////////////////////////////////////////////////////////////// */
+
+.assetmanage{
+  width: 1049px;
+  margin-left: 300px;
+}
+
+.assetmanage a{
+  padding-left: 30px;
+  padding-right: 700px;
+  color: #2462d7;
+  font-weight: bold;
+}
+.assetmanage input[type=text]{
+  background-image:url('E:/sysmetic/Assignment1/images/search.png');
+  background-repeat: no-repeat;
+  /* position: left; */
+  background-size: 15px;
+  border-radius: 20px;
+  width: 150px;
+  background-position:10px;
+  padding-left: 25px;
+  color: #888;
+
+}
+
+#searchh::placeholder{
+  color: #000;
+}
+
+.assetmanage span{
+  display: inline-block;
+}
+
+
+table {
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+th{
+  background-color: #e8e2e2;
+  /* border-color: lightgray; */
+
+  border-left-width: 0px;
+}
+td{
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 10px;
+}
+
+
+.assetimgsize{
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+}
+
+.softwareicon img{
+  width: 14px;
+  height: 14px;
+  padding-left: 5px;
+}
+.editssicon img{
+  width: 12px;
+  height: 12px;
+  padding-left: 5px;
+}
+
+.addnewassets{
+    
+
+height: 54px;}
+
+ .addnewassets img{
+  width: 60px;
+  height: 60px;
+  margin-left: 960px;
+} 
+
+.pagination{
+  display: inline-block;
+  background-color: #fdfdfd;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+
+  margin-left: 30px;
+  padding-top: 5px;
+  height: 18px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+
+
+}
+.pagination img{
+  height: 16px;
+  width: 16px;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 0px 8px;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.pagination a:hover{
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+
+/* ///////////////////////////////////////Add Assets//////////////////////////////////////////////////// */
+
+.assetnameandall{
+  width: 750px;
+  height: 85px;
+  margin-top: 20px;
+  font-size: 11px;
+  border-bottom: 1px solid #ccc;
+  float: left;
+}
+.assetnameandall label{
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.assetnameandall input[type=text]{
+  background: none;
+  width: 350px;
+  background-color: #f2f6fc;
+  margin-left: 30px;
+  margin-right: 15px;
+  border-radius: 10px;
+
+}
+.assetnameandall select{
+    width: 350px;
+    background-color: #f2f6fc;
+    border-radius: 10px;
+    border-color: #ccc;
+    height: 25px;
+}
+
+.assetuploadimg{
+  width:299px ;
+  height: 105px;
+  border-bottom: 1px solid #ccc;
+  float: right;
+}
+
+.assetuploadimg img{
+
+ border-radius: 50px;
+ width: 80px;
+ height: 80px;
+ margin-left: 130px;
+ /* margin-right: 60px;
+ float: right; */
+}
+
+.assetuploadimg a{
+  text-decoration: underline;
+  font-size: 8px;
+  color: blue;
+  margin-left: 110px;
+  padding-right: 0px;
+
+}
+
+.bottons{
+  margin-top: 120px;
+  margin-left: 20px;
+  
+}
+
+
+.bottons a{
+  width: 80px;
+  height: 25px;
+  border:none;
+  border-bottom: 0.5px solid #ccc;
+  background-color: white;
+  padding-left: 10px;
+  padding-bottom: 3px;
+  padding-right: 10px;
+  color: black;
+  font-weight: normal;
+  font-size: 12px;
+  text-decoration: none;
+  
+}
+ /* .bottons a:active{
+  border-bottom: 2.5px solid blue ;
+
+ } */
+.bottons a img{
+  width: 12px;
+  height: 13px;
+  padding-right: 5px;
+}
+
+.bottons a:hover {
+  border-bottom: 2.5px solid blue ;
+}
+
+.drag{
+  height: 130px;
+  background-color:#f2f6fc;
+  margin-top: 100px;
+  margin-left: 390px;
+  width: 280px;
+  border-radius: 15px;
+  border: 2px dashed #afabab;
+  text-align: center;
+ 
+}
+.drag a{
+  padding-right: 0px;
+  padding-left: 0px;
+  text-decoration: underline;
+  color: black;
+  font-weight: normal;
+}
+
+/* ////////////////////////////////////////////////////////////Asset Detail/////////////////////////////////////////////////////////// */
+
+.bottons button{
+  border: none;
+  width: 70px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #0a2cfb;
+  opacity: 0.8;
+  color:white;
+  background: linear-gradient(to right ,#0c04AE ,#2564DE);
+}
+
+.boxiconassetsrow1{
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.boxiconassetsrow2{
+  margin-top: 50px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.boxiconassets{
+  margin-left: 15px;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #efdede;
+  border-radius: 12px;
+  box-shadow: #afabab;
+
+}
+
+.imgcloseasset{
+  float: right;
+}
+
+.imgicon{
+  
+      width: 50px;
+      height: 50px;
+      padding-top: 25px;
+      padding-left: 25px;
+      padding-bottom: 25px;
+}
+
+.imgassethead{
+  margin-top: 0px;
+  margin-left: 7px;
+  font-weight: normal;
+}
+
+/* ///////////////////////////////////////////////////PREVIEW////////////////////////////////////////////////////////////// */
+
+.preview{
+  width: 100%;
+  height: 750px;
+}
+
+.previewleft{
+  padding-top: 10px;
+  padding-left: 25px;
+  width: 25%;
+  height: 740px;
+  float: left;
+  background-color: white;
+  text-align: center;
+}
+.previewleft img{
+  padding-top: 10px;
+  width: 60px;
+  height: 60px;
+
+}
+.previewleft p{
+  margin-bottom:7px;
+  padding-bottom: 10px;
+  padding-top: 4px;
+  margin-top:0px;
+  font-size: 9px;
+  border-bottom: 1px solid #ccc;
+
+}
+.previewright{
+  /* float: right; */
+  widows: 75%;
+  height: 740px;
+  background-color: black;
+}
+
+.previewright img{
+  width: 35px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.previewleft img:hover{
+  opacity: 0.7;
+}
+.previewzoom img{
+  width: 150px;
+  height: 150px;
+  margin-top: 220px;
+  margin-left: 420px
+}
